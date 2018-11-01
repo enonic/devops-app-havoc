@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Havoc</title>
+    <link href="{{assetsUri}}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{assetsUri}}/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{assetsUri}}/css/dashboard.css" rel="stylesheet">
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div>
+            <h1>Wrecking havoc</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">GC</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="inpRunTime">Runtime (ms)</label>
+                            <input type="text" class="form-control" id="inpRunTime" value="60000">
+                        </div>
+                        <div class="form-group">
+                            <label for="inpIterations">Iterations (ms)</label>
+                            <input type="text" class="form-control" id="inpIterations" value="1000">
+                        </div>
+
+                        <div class="form-group">
+                            <button id="btnGC" type="button" class="btn btn-primary btn-lg">Start GC-havoc</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertMessage" class="alert alert-warning" role="alert">
+        <i class="fa fa-fw fa-exclamation-triangle"></i> <span id="alertMessageText"></span>
+    </div>
+
+    <script src="{{assetsUri}}/js/jquery-3.3.1.min.js"></script>
+    <script src="{{assetsUri}}/js/bootstrap.bundle.min.js"></script>
+    <script src="{{assetsUri}}/js/moment.min.js"></script>
+    <script src="{{assetsUri}}/js/moment-timezone-with-data.min.js"></script>
+    <script src="{{assetsUri}}/js/dashboard.js" data-svcurl="{{svcUrl}}" data-baseurl="{{baseUrl}}"></script>
+</body>
+</html>
