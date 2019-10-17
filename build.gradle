@@ -19,6 +19,7 @@ dependencies {
     include "com.enonic.xp:lib-auth:${xpVersion}"
     include 'com.enonic.lib:lib-router:1.0.1'
     include "com.enonic.xp:lib-mustache:${xpVersion}"
+    testCompile 'junit:junit:4.12'
     //include "com.enonic.xp:lib-mustache:${xpVersion}"
     //include "com.enonic.xp:lib-i18n:${xpVersion}"
     //include "com.enonic.xp:lib-auth:${xpVersion}"

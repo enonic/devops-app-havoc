@@ -2,6 +2,9 @@ package com.enonic.devops.app.havoc;
 
 import java.util.LinkedList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.enonic.xp.script.bean.BeanContext;
 import com.enonic.xp.script.bean.ScriptBean;
 
@@ -9,6 +12,8 @@ public class HavocBean
     implements ScriptBean
 {
     private static LinkedList<String> buff = new LinkedList<>();
+
+    private Logger LOG = LoggerFactory.getLogger( HavocBean.class );
 
     @Override
     public void initialize( final BeanContext context )
@@ -19,7 +24,7 @@ public class HavocBean
     public void wreckGC( final GCHavocParams params )
         throws InterruptedException
     {
-        System.out.println( "Recking havoc" );
+        System.out.println( "Wreaking GC-havoc" );
 
         long start = System.currentTimeMillis();
 

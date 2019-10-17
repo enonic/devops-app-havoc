@@ -1,6 +1,8 @@
+.h1 {
+    color: #eee;
+}
 
 #alertMessage {
     display: none;
-
 
 }
